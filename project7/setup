@@ -1,0 +1,4 @@
+module load hadoop/2.6.0
+export HIVE_HOME=/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin
+export PATH=$HIVE_HOME/bin:$PATH
+export HIVE_OPTS="--hiveconf mapreduce.framework.name=local --hiveconf fs.default.name=file://$HOME --hiveconf hive.metastore.warehouse.dir=file://$HOME/warehouse --hiveconf javax.jdo.option.ConnectionURL=jdbc:derby:;databaseName=/$HOME/metastore_db;create=true"
